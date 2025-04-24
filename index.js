@@ -34,11 +34,12 @@ class Api
 	{
 		let result = '';
 		/* Здесь ваш код */
-    result = template;
-    Object.entries(object).forEach(([key, value]) => {
-      result = result.replace(`%${key}%`, encodeURI(value));
-      return result;
-    });
+    	result = template;
+    	Object.entries(object).forEach(([key, value]) => 
+		{
+      		result = result.replace(`%${key}%`, encodeURI(value));
+      		return result;
+    	});
 
 
 		return result;
